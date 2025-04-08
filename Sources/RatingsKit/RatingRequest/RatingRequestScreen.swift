@@ -95,10 +95,6 @@ public struct RatingRequestScreen {
 
     /// Opens the App Store review page and performs the requested rating action.
     func ratingRequestAction() {
-        guard let url = URL?.reviewRequest(for: appId) else { return }
-
-        openURL(url)
-
         primaryButtonAction()
     }
 
